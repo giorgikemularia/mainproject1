@@ -1,0 +1,32 @@
+@mixin h4movie {
+  color: #fff;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 50px;
+}
+@mixin ptext {
+  font-family: DM Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  color: #e0e0e0;
+}
+
+@mixin გაიგემეტი-button {
+  padding: 10px 20px;
+  border-radius: 25px;
+  background-color: black;
+
+  border: 0px solid black;
+  color: white;
+}
+@mixin bg-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@mixin h2about {
+  font-size: 50px;
+  color: rgb(24, 8, 8);
+}
