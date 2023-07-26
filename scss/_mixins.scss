@@ -6,22 +6,54 @@
   line-height: 50px;
 }
 @mixin ptext {
-  font-family: DM Sans;
   font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
+  font-family: "BPG Algeti Compact", sans-serif;
   line-height: 28px;
   color: #e0e0e0;
 }
 
 @mixin გაიგემეტი-button {
-  padding: 10px 20px;
-  border-radius: 25px;
-  background-color: black;
-
-  border: 0px solid black;
-  color: white;
+  border-radius: 4px;
+  background-color: #2c3440;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-size: 15px;
+  padding: 16px;
+  width: 120px;
+  height: 60px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 36px;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
 }
+
+button {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+button:after {
+  content: "»";
+  position: absolute;
+  opacity: 0;
+  top: 22px;
+  right: -20px;
+  transition: 0.5s;
+}
+
+button:hover {
+  padding-right: 24px;
+  padding-left: 8px;
+}
+
+button:hover:after {
+  opacity: 1;
+  right: 10px;
+}
+
 @mixin bg-img {
   background-size: cover;
   background-repeat: no-repeat;
@@ -29,4 +61,11 @@
 @mixin h2about {
   font-size: 50px;
   color: rgb(24, 8, 8);
+}
+@mixin numbers {
+  color: #dd2242;
+  text-align: center;
+  font-size: 42.137px;
+  font-style: normal;
+  font-weight: 700;
 }

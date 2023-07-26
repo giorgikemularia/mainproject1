@@ -2,57 +2,108 @@
 @import "variables";
 @import "mixins";
 
-body {
-  background-color: #2c3440;
-  height: 1000px;
-  .bg-img {
-    background-image: url("../images/spidermanbg.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    box-shadow: 20px 50px 50px 50px rgb(7, 1, 22) inset;
-    transform: translateX(center);
-    //  first section
+html {
+  scroll-behavior: smooth;
+  body {
+    background-color: #2c3440;
+    height: 1700px;
+    .bg-img {
+      background-image: url("../images/spidermanbg.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      box-shadow: 20px 50px 50px 50px rgb(7, 1, 22) inset;
+      transform: translateX(center);
+      //  first section
 
-    .grid-container {
-      width: 100%;
-      height: 100%;
-      color: white;
-      font-size: 20px;
-      display: grid;
-      grid-template-columns: 600px 300px 400px;
-      grid-template-rows: 100px 400px 150px;
-      .grid-item:nth-child(1) {
-        margin-top: 25px;
-        grid-column: 1 / span 2;
-        width: 600px;
-        height: 100px;
-        display: flex;
-        gap: 70px;
-        .logo {
-          transform: translateY(-40px);
-        }
-        nav {
-          ul {
-            display: flex;
-            gap: 70px;
-            li {
-              font-size: 20px;
-              color: white;
+      .grid-container {
+        width: 100%;
+        height: 100%;
+        color: white;
+        font-size: 20px;
+        display: grid;
+        grid-template-columns: 600px 300px 400px;
+        grid-template-rows: 100px 400px 150px;
+        .grid-item:nth-child(1) {
+          margin-top: 25px;
+          grid-column: 1 / span 2;
+          width: 600px;
+          height: 100px;
+          display: flex;
+          gap: 70px;
+          position: fixed;
+          z-index: 1;
+          .logo {
+            transform: translateY(-40px);
+          }
+          nav {
+            margin-top: -5px;
+            ul {
+              display: flex;
+              gap: 70px;
+              a {
+                padding: 5px;
+
+                li {
+                  font-size: 20px;
+                  color: white;
+                  opacity: 0.5;
+                }
+                .li-aboutus {
+                  font-size: 20px;
+                  color: white;
+                  width: 130px;
+                }
+                li:hover {
+                  opacity: 1;
+                }
+              }
+              a:hover {
+                border-bottom: 1px solid white;
+              }
             }
           }
         }
       }
       .grid-item:nth-child(2) {
-        width: 10px;
-        height: 10px;
+        width: 250px;
+        height: 60px;
         display: flex;
+        align-items: center;
         gap: 70px;
         margin-top: 25px;
-        transform: translateX(300px);
+        transform: translateX(1100px);
+        position: fixed;
+        z-index: 1;
+        input {
+          display: none;
+          width: 140px;
+          transform: translate(50px, -20px);
+          background-color: #2c3440ab;
+          border-radius: 5px;
+          padding: 20px, 35px;
+          position: absolute;
+          animation: inputanim 1000ms;
+        }
+        .fa-solid {
+          transform: translate(50px, -20px);
+        }
+      }
+
+      @keyframes inputanim {
+        from {
+          transform: translate(50px, -20px);
+        }
+        to {
+          transform: translate(-50px, -20px);
+        }
+      }
+      .grid-item:nth-child(2):hover input {
+        display: block;
+        transform: translate(-50px, -20px);
       }
       .grid-item:nth-child(3) {
-        transform: translate(200px, 100px);
+        transform: translate(200px, 200px);
         grid-column: 1 / span 1;
         display: flex;
         flex-direction: column;
@@ -60,8 +111,47 @@ body {
         h1 {
           font-size: 40px;
         }
-        .button1 {
-          @include გაიგემეტი-button;
+        button {
+          transform: translate(-30px, -20px);
+          border-radius: 4px;
+          background-color: #2c3440;
+          border: none;
+          color: #fff;
+          text-align: center;
+          font-size: 15px;
+          padding: 16px;
+          width: 120px;
+          height: 60px;
+          transition: all 0.5s;
+          cursor: pointer;
+          margin: 36px;
+          box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
+        }
+
+        button {
+          cursor: pointer;
+          display: inline-block;
+          position: relative;
+          transition: 0.5s;
+        }
+
+        button:after {
+          content: "»";
+          position: absolute;
+          opacity: 0;
+          top: 22px;
+          right: -20px;
+          transition: 0.5s;
+        }
+
+        button:hover {
+          padding-right: 24px;
+          padding-left: 8px;
+        }
+
+        button:hover:after {
+          opacity: 1;
+          right: 10px;
         }
       }
       .grid-item:nth-child(4) {
@@ -82,11 +172,15 @@ body {
         padding: 10px;
         color: white;
         background-color: black;
+        opacity: 0.5;
         h2 {
           font-size: 15px;
         }
         .what-u-find {
           color: white;
+          p {
+            @include ptext;
+          }
         }
       }
       .grid-item:nth-child(6) {
@@ -139,7 +233,8 @@ body {
       }
       .button-mafia {
         @include გაიგემეტი-button;
-        transform: translate(-70px, 138px);
+        background-color: #2c2424;
+        transform: translate(-70px, 130px);
       }
     }
     .grid2:nth-child(3) {
@@ -194,8 +289,8 @@ body {
       a {
         .space-button {
           @include გაიგემეტი-button;
-
-          transform: translate();
+          width: 200px;
+          transform: translateY(-20px);
         }
       }
     }
@@ -272,14 +367,14 @@ body {
     flex-direction: column;
     gap: 10px;
     transform: translateX(130px);
-    margin-top: 100px;
+    margin-top: 250px;
     position: absolute;
 
     h2 {
       @include h2about;
       position: absolute;
-      left: 200px;
-      top: -90px;
+      left: 300px;
+      top: -130px;
       width: 500px;
     }
     p {
@@ -287,7 +382,7 @@ body {
       font-size: 20px;
       width: 500px;
       position: absolute;
-      left: 400px;
+      left: 361px;
       top: -50px;
     }
     .sect5-container {
@@ -305,7 +400,6 @@ body {
         .onceupon {
           height: 470px;
           border-radius: 20px;
-          box-shadow: 5px 5px 20px black;
         }
 
         .apocalypsenow {
@@ -318,6 +412,7 @@ body {
         display: flex;
         flex-direction: column;
         gap: 50px;
+
         .spaceodyssey {
           border-radius: 20px;
         }
@@ -426,6 +521,345 @@ body {
       .active,
       .dot:hover {
         background-color: #717171;
+      }
+    }
+  }
+  #aboutus {
+    .bg-about {
+      width: 100%;
+      height: 500px;
+      background-image: url(../images/spidermanbg.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      filter: blur(5px);
+    }
+    .bg-text {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      h2 {
+        font-size: 50px;
+        color: white;
+        position: absolute;
+        bottom: 375px;
+        left: 535px;
+      }
+      p {
+        @include ptext;
+        font-size: 17px;
+        position: absolute;
+        bottom: 325px;
+        left: 375px;
+      }
+    }
+
+    h5 {
+      @include numbers;
+      width: 200px;
+    }
+    .p51,
+    .p52,
+    .p53 {
+      @include ptext;
+      width: 240px;
+    }
+
+    .h51 {
+      transform: translate(50px, -280px);
+    }
+    .h52 {
+      transform: translate(569px, -430px);
+    }
+    .h53 {
+      transform: translate(1100px, -590px);
+    }
+    .p51 {
+      transform: translate(50px, -280px);
+    }
+    .p52 {
+      transform: translate(569px, -430px);
+    }
+    .p53 {
+      transform: translate(1100px, -585px);
+    }
+  }
+
+  #services {
+    width: 100%;
+    height: 700px;
+    transform: translateY(-826px);
+
+    .line {
+      background-color: black;
+      transform: translate(144px, 560px);
+      height: 494px;
+    }
+    .title {
+      @include h2about;
+      transform: translate(120px, -50px);
+      width: 400px;
+    }
+    .servisebi1 {
+      width: 70%;
+      height: 25%;
+      display: flex;
+      gap: 30px;
+      padding: 10px;
+      transform: translate(100px);
+      .circle {
+        background-color: red;
+        width: 70px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .shinaarsi1 {
+        h2 {
+          font-size: 20px;
+          color: black;
+        }
+        p {
+          @include ptext;
+          transform: translateY(5px);
+        }
+      }
+      .shinaarsi2 {
+        h2 {
+          font-size: 20px;
+          color: black;
+        }
+        p {
+          @include ptext;
+          transform: translateY(5px);
+        }
+      }
+      .shinaarsi22 {
+        display: flex;
+        .shinaarsi23 {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+    .servisebi2 {
+      width: 70%;
+      height: 35%;
+      display: flex;
+      gap: 30px;
+      padding: 10px;
+      transform: translate(100px);
+
+      .circle {
+        background-color: red;
+        width: 70px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      div {
+        display: flex;
+        flex-direction: column;
+      }
+      .shinaarsi2 {
+        h2 {
+          font-size: 20px;
+          color: black;
+        }
+        p {
+          @include ptext;
+          transform: translateY(5px);
+        }
+      }
+      .shinaarsi22 {
+        display: flex;
+        flex-direction: row;
+        transform: translate(0px, 50px);
+
+        img {
+          width: 100px;
+        }
+        .shinaarsi23 {
+          display: flex;
+          flex-direction: column;
+          transform: translate(20px);
+          h2 {
+            font-size: 20px;
+            color: black;
+          }
+          p {
+            @include ptext;
+            transform: translateY(5px);
+          }
+          .services-button {
+            @include გაიგემეტი-button;
+          }
+        }
+      }
+    }
+    .servisebi3 {
+      width: 70%;
+      height: 45px;
+      display: flex;
+      gap: 30px;
+      padding: 10px;
+      transform: translate(45px, 0px);
+
+      .circle {
+        background-color: red;
+        width: 70px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .shinaarsi3 {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        h2 {
+          font-size: 20px;
+          color: black;
+        }
+        p {
+          @include ptext;
+        }
+      }
+    }
+  }
+  #news {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    transform: translateY(-50px);
+    .h2p {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      .siaxle {
+        @include h2about;
+        font-size: 20px;
+      }
+      h2 {
+        @include h2about;
+        font-size: 30px;
+      }
+      p {
+        @include ptext;
+        font-size: 20px;
+      }
+    }
+    .videooppen {
+      video {
+        width: 1056px;
+        height: 594px;
+      }
+    }
+    .director-about {
+      display: flex;
+      justify-content: space-evenly;
+      gap: 100px;
+      .director {
+        display: flex;
+        gap: 30px;
+        margin-left: 70px;
+        img {
+          width: 200px;
+        }
+        .content-dir {
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+          h2 {
+            @include h2about;
+            font-size: 30px;
+          }
+          p {
+            @include ptext;
+          }
+        }
+      }
+      .about122 {
+        display: flex;
+        gap: 30px;
+        margin-right: 70px;
+
+        img {
+          height: 300px;
+        }
+        .content-about {
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+          width: 400px;
+          h2 {
+            @include h2about;
+            font-size: 30px;
+          }
+          p {
+            @include ptext;
+          }
+        }
+      }
+    }
+  }
+  #contact {
+    transform: translateY(-183px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2 {
+      @include h2about;
+    }
+    p {
+      @include ptext;
+    }
+    a {
+      color: rgb(24, 8, 8);
+    }
+    a {
+      button {
+        @include გაიგემეტი-button;
+        width: 200px;
+      }
+    }
+  }
+  footer {
+    background-color: black;
+    width: 100%;
+    height: 100px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .footer-div {
+      display: flex;
+      gap: 50px;
+      img {
+        width: 50px;
+        height: 50px;
+      }
+      nav {
+        transform: translateY(15px);
+        ul {
+          display: flex;
+          gap: 30px;
+        }
+      }
+    }
+    .footer-div2 {
+      display: flex;
+      gap: 30px;
+      .Copyright {
+        display: flex;
       }
     }
   }

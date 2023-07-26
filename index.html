@@ -4,253 +4,377 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/global.css" />
+    <link
+      rel="stylesheet"
+      href="/bower_components/bpg-algeti-compact/css/bpg-algeti-compact.min.css"
+    />
+
     <title>Document</title>
   </head>
   <body>
-    <div class="bg-img">
-      <section class="grid-container">
-        <div class="grid-item">
-          <img class="logo" src="images/mainlogo.png" alt="logo" />
-          <nav>
-            <ul>
-              <li>მთავარი</li>
-              <li>ჩვენს შესახებ</li>
-              <li>სერვისები</li>
-              <li>სიახლე</li>
-              <li>კონტაქტი</li>
-            </ul>
-          </nav>
-        </div>
-        <div class="grid-item">
-          <div class="search-icon">
+    <section id="home">
+      <div class="bg-img">
+        <section class="grid-container">
+          <div class="grid-item">
+            <img class="logo" src="images/mainlogo.png" alt="logo" />
+            <nav>
+              <ul>
+                <a href="#home"> <li>მთავარი</li></a>
+                <a href="#news"><li>სიახლე</li></a>
+                <a href="#aboutus"><li class="li-aboutus">ჩვენს შესახებ</li></a>
+                <a href="#services"><li>სერვისები</li></a>
+                <a href="#contact"><li>კონტაქტი</li></a>
+              </ul>
+            </nav>
+          </div>
+          <div class="grid-item">
+            <label for="search"></label>
+            <input type="search" id="search" placeholder="search" />
             <i class="fa-solid fa-magnifying-glass"></i>
+
+            <!-- <div class="list-icon">
+              <i class="fa-solid fa-bars"></i>
+            </div> -->
           </div>
-          <div class="list-icon">
-            <i class="fa-solid fa-bars"></i>
+          <div class="grid-item">
+            <h1>აღმოაჩინე</h1>
+            <h1>ფილმი</h1>
+            <a href=""><button>გაიგე მეტი</button> </a>
           </div>
+          <div class="grid-item">
+            <a href="https://www.tbceducation.ge/">
+              <img
+                class="tibisilogo"
+                src="images/tibisilogo.png"
+                alt="tibisilogo"
+              />
+            </a>
+          </div>
+          <div class="grid-item">
+            <h2>რას იპოვი ვებსაიტზე?</h2>
+            <div class="what-u-find"></div>
+            <p>
+              ვებსაიტზე მოიძიებთ და იპოვით ფილმის რეკომენდაციებს , სადაც
+              გაეცნობით ფილმის შესავალს , ასევე გაეცნობით სიახლეებს
+              კინოსამყაროში.
+            </p>
+          </div>
+          <div class="grid-item">
+            <video
+              src="videos/Oppenheimer   Official Trailer.mkv"
+              autoplay
+              loop
+              muted
+            ></video>
+          </div>
+        </section>
+      </div>
+      <section class="sect4">
+        <div class="grid4">
+          <img src="images/shawshank.jpg" alt="shawshank" />
         </div>
-        <div class="grid-item">
-          <h1>აღმოაჩინე</h1>
-          <h1>ფილმი</h1>
-          <a href=""><button class="button1">გაიგე მეტი</button> </a>
-        </div>
-        <div class="grid-item">
-          <a href="https://www.tbceducation.ge/">
-            <img
-              class="tibisilogo"
-              src="images/tibisilogo.png"
-              alt="tibisilogo"
-            />
-          </a>
-        </div>
-        <div class="grid-item">
-          <h2>რას იპოვი ვებსაიტზე?</h2>
-          <div class="what-u-find"></div>
+        <div class="grid4">
+          <h2>Drama Classics</h2>
+          <h4>The Shawshank Redemption</h4>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem
-            eaque optio beatae, dignissimos dolore explicabo repellat nesciunt
-            praesentium, quos sapiente iste harum culpa nisi ab accusamus sit
-            voluptatum tempora dolorum?
+            გაქცევა შოუშენკიდან (ინგლ. The Shawshank Redemption) — 1994 წლის
+            ამერიკული ფილმი, რომლის რეჟისორი და სცენარისტია ფრენკ დარაბონტი,
+            პროდიუსერია ნიკი მარვინი, ხოლო მუსიკა ეკუთვნის ტომას ნიუმენს.
+            მონაწილეობენ ტიმ რობინსი, მორგან ფრიმენი, ბობ განტონი, უილიამ
+            სედლერი, კლენსი ბრაუნი, გილ ბელოუზი, ჯეიმზ უითმორი. ფილმი
+            დაფუძნებულია სტივენ კინგის ნაწარმოებზე „რიტა ჰეიუორთი და გაქცევა
+            შოუშენკიდან“. ფილმში მოთხრობილია ბანკირ ენდი დიუფრეინის ისტორია,
+            რომელსაც ბრალს დასდებენ საკუთარი ცოლისა და საყვარლის მოკვლისთვის და
+            მიუსჯიან სამუდამო პატიმრობას შოუშენკის ციხეში, რის შემდეგაც
+            გადაწყვეტს ციხიდან გაქცევას.
           </p>
         </div>
-        <div class="grid-item">
-          <video
-            src="videos/Oppenheimer   Official Trailer.mkv"
-            autoplay
-            muted
-          ></video>
+
+        <div class="grid4">
+          <h4>One Flew Over the Cuckoo's Nest</h4>
+          <p>
+            „ვიღაცამ გუგულის ბუდეს გადაუფრინა“ (ინგლ. One flew over the cuckoo's
+            nest) — რეჟისორ მილოშ ფორმანის მხატვრული ფილმი დრამის ჟანრში, კენ
+            კიზის რომანის – „გუგულის ბუდეზე სხვა გადაფრინდა“ ეკრანიზაცია. ფილმის
+            პრემიერა შედგა 1975 წლის 19 ნოემბერს, ჩიკაგოს კინოფესტივალზე.
+            კინემატოგრაფიის ისტორიაში სურათი გახდა მეორე, რომელმაც ოსკარი ხუთ
+            ყველაზე პრესტიჟულ ნომინაციაში მიიღო. ეს მიღწევა აქამდე მხოლოდ „ეს
+            ერთხელ, ღამით მოხდა-ს“ (1934) ეკუთვნოდა. იგივე წარმატება ფილმმა
+            გაიმეორა „ოქროს გლობუსის“ დაჯილდოებაზეც – კინოს ისტორიაში პირველად.
+            ფილმი, რომელშიც ფსიქიატრიული კლინიკის კედლებში მომხდარ დრამაზეა
+            მოთხრობილი, თითქმის მთლიანად გადაიღეს შტატ ორეგონის შესაბამისი
+            პროფილის საავადმყოფოში.
+          </p>
+        </div>
+        <div class="grid4">
+          <img src="images/oneflewover.jpg" alt="one flew over" />
         </div>
       </section>
-    </div>
-    <section class="sect4">
-      <div class="grid4">
-        <img src="images/shawshank.jpg" alt="shawshank" />
+
+      <section class="sect3">
+        <div class="grid3">
+          <img src="images/2001main.jpg" alt="odyssey" />
+        </div>
+        <div class="grid3">
+          <h2>SCI-fiction</h2>
+          <h4>2001: A Space Odyssey</h4>
+          <p>
+            2001: კოსმოსური ოდისეა (ინგლ. 2001: A Space Odyssey) — სტენლი
+            კუბრიკის 1968 წლის სამეცნიერო ფანტასტიკური ფილმი, რომელიც ნაწილობრივ
+            დაფუძნებულია ართურ კლარკის მოთხრობაზე „გუშაგი“. ფილმი ეხება
+            ტექნოლოგიების განვითარების, ხელოვნური ინტელექტისა და სხვა პლანეტებზე
+            სიცოცხლის არსებობის თემებს. კლარკმა ფილმის სცენარზე მუშაობის
+            პარალელურად დაწერა ამავე სახელწოდების რომანიც.
+          </p>
+          <a href=""
+            ><button class="space-button">მეტი მსგავსი ფილმი</button></a
+          >
+        </div>
+        <div class="grid3">
+          <h4>Interstellar</h4>
+          <p>
+            ვარსკვლავთშორისი (ინგლ. Interstellar) — 2014 წლის სამეცნიერო
+            ფანტასტიკის ჟანრის ფილმი, რომლის რეჟისორია კრისტოფერ ნოლანი. ფილმში
+            მთავარ როლებს ასრულებენ მეთიუ მაკ-კონეჰი, ენ ჰეთეუეი, ჯესიკა
+            ჩესტეინი, მაკკენზი ფოი და მაიკლ კეინი. სიუჟეტის მიხედვით,
+            ასტრონავტების გუნდი „თხუნელის სოროში“ მიემგზავრება, სადაც ახალ
+            დასახლებულ პლანეტას ეძებს. სცენარის ავტორები არიან კრისტოფერ და
+            ჯონათან ნოლანები. იგი დაიწერა სხვა სცენართან შერწყმით, რომელიც
+            ჯონათანმა 2007 წელს, კრისტოფერ მიერ შემოთავაზებული იდეების
+            საფუძველზე შექმნა. ფილმის პროდიუსერები არიან კრისტოფერი, მისი მეუღლე
+            ემა თომასი და ლინდა ობსტი. სამეცნიერო მრჩეველი და აღმასრულებელი
+            პროდიუსერია კიპ თორნი.
+          </p>
+        </div>
+        <div class="grid3">
+          <img src="images/interstellar.jpg" alt="interstellar" />
+        </div>
+      </section>
+
+      <section class="sect5">
+        <h2>Cinematography Gallery</h2>
+        <p>დაბლა მოცემულია კადრები ფილმებიდან</p>
+        <div class="sect5-container">
+          <div class="imgcont">
+            <img class="onceupon" src="images/onceuoon-gallery.jpg" alt="" />
+            <img class="apocalypsenow" src=images/apocalypsenow-gallery.jpg
+            alt=" apocalypsenow">
+          </div>
+          <div class="imgcont">
+            <img
+              class="spaceodyssey"
+              src="images/spaceoddy-gallery.jpg"
+              alt="space odyssey"
+            />
+            <img
+              class="barrylyndon"
+              src="images/barrylyndon-gallery"
+              alt="barry lyndon"
+            />
+            <img
+              class="cityofgod"
+              src="images/cityofgod-gallery.jpg"
+              alt="cityofgod"
+            />
+          </div>
+          <div class="imgcont">
+            <img class="joker" src="images/joker-gallery" alt="joker" />
+            <img
+              class="memories"
+              src="images/memoris-gallery.jpg"
+              alt="memoriesofmmurder"
+            />
+            <img
+              class="taxidriver"
+              src="images/taxi driver.png"
+              alt="taxidriver"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="sect6">
+        <div class="slideshow-container">
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="images/lahaine-gallery2.jpg" style="width: 100%" />
+            <div class="text">La Haine</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="images/schindler-gallery2" style="width: 100%" />
+            <div class="text">Schindler's List</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="images/seventhseal-gallery2.jpg" style="width: 100%" />
+            <div class="text">Seventh Seal</div>
+          </div>
+
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br />
+
+        <!-- The dots/circles -->
+        <div style="text-align: center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+      </section>
+    </section>
+    <section id="news">
+      <div class="h2p">
+        <h2 class="siaxle">სიახლე</h2>
+        <h2>ოფენჰეიმერი</h2>
+        <p>დღევანდელი სიახლეა ფილმი ოფენჰეიმერი</p>
       </div>
-      <div class="grid4">
-        <h2>Drama Classics</h2>
-        <h4>The Shawshank Redemption</h4>
+      <div class="videooppen">
+        <video
+          src="videos/Oppenheimer   Official Trailer.mkv"
+          autoplay
+          loop
+          muted
+        ></video>
+      </div>
+      <div class="director-about">
+        <div class="director">
+          <img src="images/nolan.jpg" alt="nolan" />
+          <div class="content-dir">
+            <h2>რეჟისორის შესახებ</h2>
+            <p>
+              კრისტოფერ ნოლანი (დ. 30 ივლისი, 1970) — ბრიტანელ-ამერიკელი
+              რეჟისორი, სცენარისტი და პროდიუსერი. <br />
+              მისი ყველაზე ცნობილი ფილმებია ფსიქოლოგიური თრილერი „მემენტო“ და
+              „ბნელი რაინდი“, რომლებითაც მოიპოვა აღიარება.
+            </p>
+          </div>
+        </div>
+        <div class="about122">
+          <img src="images/oppenheimerposter.jpg" alt="Oppenheimer" />
+          <div class="content-about">
+            <h2>ფილმის შესახებ</h2>
+            <p>
+              ოპენჰაიმერი,2023 წლის ეპიკური ბიოგრაფიული დრამა, სცენარის ავტორი
+              და რეჟისორი კრისტოფერ ნოლანი. ფილმი ასახავს ჯ. რობერტ
+              ოპენჰაიმერის, თეორიული ფიზიკოსის ცხოვრებას, რომელმაც გადამწყვეტი
+              როლი ითამაშა მანჰეტენის პროექტის ფარგლებში პირველი ბირთვული
+              იარაღის შემუშავებაში და ამით ატომური ხანის დაწყებაში. ტიტულოვანი
+              პერსონაჟის როლს კილიან მერფი ასრულებს.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="aboutus">
+      <div class="bg-about"></div>
+      <div class="bg-text">
+        <h2>ჩვენს შესახებ</h2>
+
         <p>
-          გაქცევა შოუშენკიდან (ინგლ. The Shawshank Redemption) — 1994 წლის
-          ამერიკული ფილმი, რომლის რეჟისორი და სცენარისტია ფრენკ დარაბონტი,
-          პროდიუსერია ნიკი მარვინი, ხოლო მუსიკა ეკუთვნის ტომას ნიუმენს.
-          მონაწილეობენ ტიმ რობინსი, მორგან ფრიმენი, ბობ განტონი, უილიამ სედლერი,
-          კლენსი ბრაუნი, გილ ბელოუზი, ჯეიმზ უითმორი. ფილმი დაფუძნებულია სტივენ
-          კინგის ნაწარმოებზე „რიტა ჰეიუორთი და გაქცევა შოუშენკიდან“. ფილმში
-          მოთხრობილია ბანკირ ენდი დიუფრეინის ისტორია, რომელსაც ბრალს დასდებენ
-          საკუთარი ცოლისა და საყვარლის მოკვლისთვის და მიუსჯიან სამუდამო
-          პატიმრობას შოუშენკის ციხეში, რის შემდეგაც გადაწყვეტს ციხიდან გაქცევას.
+          დაბლა მოცემულია ვებსაიტის დეველოპერისა და ვებსაიტის შესახებ ინფორმაცია
         </p>
       </div>
 
-      <div class="grid4">
-        <h4>One Flew Over the Cuckoo's Nest</h4>
-        <p>
-          „ვიღაცამ გუგულის ბუდეს გადაუფრინა“ (ინგლ. One flew over the cuckoo's
-          nest) — რეჟისორ მილოშ ფორმანის მხატვრული ფილმი დრამის ჟანრში, კენ
-          კიზის რომანის – „გუგულის ბუდეზე სხვა გადაფრინდა“ ეკრანიზაცია. ფილმის
-          პრემიერა შედგა 1975 წლის 19 ნოემბერს, ჩიკაგოს კინოფესტივალზე.
-          კინემატოგრაფიის ისტორიაში სურათი გახდა მეორე, რომელმაც ოსკარი ხუთ
-          ყველაზე პრესტიჟულ ნომინაციაში მიიღო. ეს მიღწევა აქამდე მხოლოდ „ეს
-          ერთხელ, ღამით მოხდა-ს“ (1934) ეკუთვნოდა. იგივე წარმატება ფილმმა
-          გაიმეორა „ოქროს გლობუსის“ დაჯილდოებაზეც – კინოს ისტორიაში პირველად.
-          ფილმი, რომელშიც ფსიქიატრიული კლინიკის კედლებში მომხდარ დრამაზეა
-          მოთხრობილი, თითქმის მთლიანად გადაიღეს შტატ ორეგონის შესაბამისი
-          პროფილის საავადმყოფოში.
-        </p>
+      <h5 class="h51">1</h5>
+      <p class="p51">
+        მე, გიორგი ვარ ვებსაიტის შემქმნელი , ჩემთვის პირველი გამოცდილებაა და
+        ვიმედოვნებ განვითარდები სხვადასხვა პროექტების შექმნის შემდეგ
+      </p>
+      <h5 class="h52">2</h5>
+      <p class="p52">
+        ვებსაიტის მიზანია ადამიანმა , ფილმების მოყვარულმა , მარტივად მოიძიოს
+        მისი ფილმი , წაიკითხოს აღწერა და გაეცნოს სიახლეებს კინოსამყაროში.
+      </p>
+      <h5 class="h53">3</h5>
+      <p class="p53">
+        ვებსაიტი საკმაოდ კარგად არის გამართული და დაწერილი და ემსახურება მიზნის
+        შესრულებას.
+      </p>
+    </section>
+    <section id="services">
+      <img class="line" src="images/Line.png" alt="Line" />
+      <h2 class="title">სერვისები</h2>
+      <div class="servisebi1">
+        <div class="circle">1</div>
+        <div class="shinaarsi1">
+          <h2>საიტის განლაგება</h2>
+          <p>
+            საიტი განაწილებულია და დაყოფილია სხვადასხვა სექციებად. <br />
+            შეგიძლიათ გამოიყენოთ ე.წ ნავიგაცია საიტის გამოყენებისას.
+          </p>
+        </div>
       </div>
-      <div class="grid4">
-        <img src="images/oneflewover.jpg" alt="one flew over" />
+      <div class="servisebi2">
+        <div class="circle">2</div>
+        <div>
+          <div class="shinaarsi2">
+            <h2>საიტზე არსებული კონტენტი</h2>
+            <p>
+              საიტზე არის ჟანრობრივად დაყოფილი ფილმები (ფილმის შესავალი და
+              ოფიციალური პოსტერი), <br />
+              ასევე წარმოჩენილია ცნობილი ფილმებიდან კადრები, საიტზე შეგიძლიათ
+              გაეცნოთ სიახლეებს კინოსამყაროში.
+            </p>
+          </div>
+          <div class="shinaarsi22">
+            <img src="images/dicaprio" alt="dicaprio" />
+            <div class="shinaarsi23">
+              <h2>თუ შეიძლება</h2>
+              <p>
+                კონტაქტ სექციაში არსებული mail ზე შეგიძლიათ მოგვწეროთ თქვენი
+                feedback საიტთან დაკავშირებით.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="servisebi3">
+        <div class="servisebi3">
+          <div class="circle">3</div>
+          <div class="shinaarsi3">
+            <h2>მადლობა</h2>
+            <p>შეგიძლიათ გააგრძელოთ საიტით სარგებლობა.</p>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="sect3">
-      <div class="grid3">
-        <img src="images/2001main.jpg" alt="odyssey" />
-      </div>
-      <div class="grid3">
-        <h2>SCI-fiction</h2>
-        <h4>2001: A Space Odyssey</h4>
-        <p>
-          2001: კოსმოსური ოდისეა (ინგლ. 2001: A Space Odyssey) — სტენლი კუბრიკის
-          1968 წლის სამეცნიერო ფანტასტიკური ფილმი, რომელიც ნაწილობრივ
-          დაფუძნებულია ართურ კლარკის მოთხრობაზე „გუშაგი“. ფილმი ეხება
-          ტექნოლოგიების განვითარების, ხელოვნური ინტელექტისა და სხვა პლანეტებზე
-          სიცოცხლის არსებობის თემებს. კლარკმა ფილმის სცენარზე მუშაობის
-          პარალელურად დაწერა ამავე სახელწოდების რომანიც.
-        </p>
-        <a href=""><button class="space-button">მეტი მსგავსი ფილმი</button></a>
-      </div>
-      <div class="grid3">
-        <h4>Interstellar</h4>
-        <p>
-          ვარსკვლავთშორისი (ინგლ. Interstellar) — 2014 წლის სამეცნიერო
-          ფანტასტიკის ჟანრის ფილმი, რომლის რეჟისორია კრისტოფერ ნოლანი. ფილმში
-          მთავარ როლებს ასრულებენ მეთიუ მაკ-კონეჰი, ენ ჰეთეუეი, ჯესიკა ჩესტეინი,
-          მაკკენზი ფოი და მაიკლ კეინი. სიუჟეტის მიხედვით, ასტრონავტების გუნდი
-          „თხუნელის სოროში“ მიემგზავრება, სადაც ახალ დასახლებულ პლანეტას ეძებს.
-          სცენარის ავტორები არიან კრისტოფერ და ჯონათან ნოლანები. იგი დაიწერა
-          სხვა სცენართან შერწყმით, რომელიც ჯონათანმა 2007 წელს, კრისტოფერ მიერ
-          შემოთავაზებული იდეების საფუძველზე შექმნა. ფილმის პროდიუსერები არიან
-          კრისტოფერი, მისი მეუღლე ემა თომასი და ლინდა ობსტი. სამეცნიერო მრჩეველი
-          და აღმასრულებელი პროდიუსერია კიპ თორნი.
-        </p>
-      </div>
-      <div class="grid3">
-        <img src="images/interstellar.jpg" alt="interstellar" />
-      </div>
+    <section id="contact">
+      <h2>კონტაქტი</h2>
+      <p>ნებისმიერი პრობლემის შემთხვევაში შეგიძლიათ დაგვეკონტაქტოთ <br /></p>
+      <p>mail-ზე</p>
+      <a href="mailto: giorgi.kemulariate01@geolab.edu.ge">Send Email</a>
+      <p>ან დაგვიკავშირდით ტელ-ნომერზე</p>
+      <a href="tel:597102030">Call</a>
+      <a href=""><button>დაუბრუნდით მთავარს</button></a>
     </section>
-
-    <!-- <section class="sect2">
-      <div class="grid2">
-        <img src="images/onceupon.jpg" alt="once upon" />
+    <footer>
+      <div class="footer-div">
+        <img src="images/mainlogo.png" alt="logo" />
+        <nav>
+          <ul>
+            <li>მთავარი</li>
+            <li>ჩვენს შესახებ</li>
+            <li>კონტაქტი</li>
+          </ul>
+        </nav>
       </div>
-      <div class="grid2">
-        <h2 class="Mafia">Crime Movies</h2>
-        <h4>Once Upon A Time in America</h4>
-        <p>
-          ერთხელ ამერიკაში (იტალ. C'era una volta in America, ინგლ. Once Upon a
-          Time in America) — 1984 წლის იტალიური კრიმინალური ჟანრის ფილმი,
-          გადაღებული რეჟისორ სერჯო ლეონეს მიერ. მთავარ როლებში არიან რობერტ დე
-          ნირო და ჯეიმზ ვუდსი. ასახულია ებრაელი მოზარდების ცხოვრება ნიუ-იორკის
-          გეტოში. ფილმში წამოწეულია მეგობრობის, სიყვარულის, ვნების, სიხარბის,
-          ღალატისა და ტკივილის თემები; ასევე ნაჩვენებია ამერიკულ საზოგადოებაში
-          განგსტერების გამოჩენა. ფილმი ჰარი გრეის მოთხრობის „The Hoods“
-          ადაპტაციაა, რომელიც თავად ლეონემ შეასრულა ფილმზე „ერთხელ დასავლეთში“
-          (1968) მუშაობისას.
-        </p>
-        <a href=""><button class="button-mafia">მეტი მსგავსი ფილმი</button></a>
-      </div>
-      <div class="grid2">
-        <h4>GoodFellas</h4>
-        <p>
-          Goodfellas არის 1990 წლის ამერიკული ბიოგრაფიული კრიმინალური ფილმი,
-          რეჟისორი მარტინ სკორსეზე, სცენარის ავტორი ნიკოლას პილეგი და სკორსეზე,
-          პროდიუსერი ირვინ ვინკლერი. ეს არის პილეგის 1985 წლის არამხატვრული
-          წიგნის Wiseguy-ის კინოადაპტაცია. როლებში რობერტ დე ნირო, რეი ლიოტა, ჯო
-          პეში, ლორეინ ბრაკო და პოლ სორვინო მონაწილეობენ, ფილმი მოგვითხრობს
-          ჰენრი ჰილის და მისი მეგობრებისა და ოჯახის აღზევებასა და დაცემას 1955
-          წლიდან 1980 წლამდე.
-        </p>
-      </div>
-      <div class="grid2">
-        <img src="images/goodfellas.jpg" alt="goodfellas" />
-      </div>
-    </section> -->
-    <section class="sect5">
-      <h2>Cinematograohy Gallery</h2>
-      <p>დაბლა მოცემულია კადრები ფილმებიდან</p>
-      <div class="sect5-container">
-        <div class="imgcont">
-          <img class="onceupon" src="images/onceuoon-gallery.jpg" alt="" />
-          <img class="apocalypsenow" src=images/apocalypsenow-gallery.jpg alt="
-          apocalypsenow">
-        </div>
-        <div class="imgcont">
-          <img
-            class="spaceodyssey"
-            src="images/spaceoddy-gallery.jpg"
-            alt="space odyssey"
-          />
-          <img
-            class="barrylyndon"
-            src="images/barrylyndon-gallery"
-            alt="barry lyndon"
-          />
-          <img
-            class="cityofgod"
-            src="images/cityofgod-gallery.jpg"
-            alt="cityofgod"
-          />
-        </div>
-        <div class="imgcont">
-          <img class="joker" src="images/joker-gallery" alt="joker" />
-          <img
-            class="memories"
-            src="images/memoris-gallery.jpg"
-            alt="memoriesofmmurder"
-          />
-          <img
-            class="taxidriver"
-            src="images/taxi driver.png"
-            alt="taxidriver"
-          />
+      <div class="footer-div2">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-google"></i>
+        <i class="fa-brands fa-tiktok"></i>
+        <div class="Copyright">
+          <p>Copyright</p>
+          <i class="fa-regular fa-copyright"></i>
+          <p>2023</p>
         </div>
       </div>
-    </section>
-    <section class="sect6">
-      <div class="slideshow-container">
-        <!-- Full-width images with number and caption text -->
-        <div class="mySlides fade">
-          <div class="numbertext">1 / 3</div>
-          <img src="images/lahaine-gallery2.jpg" style="width: 100%" />
-          <div class="text">La Haine</div>
-        </div>
-
-        <div class="mySlides fade">
-          <div class="numbertext">2 / 3</div>
-          <img src="images/schindler-gallery2" style="width: 100%" />
-          <div class="text">Schindler's List</div>
-        </div>
-
-        <div class="mySlides fade">
-          <div class="numbertext">3 / 3</div>
-          <img src="images/seventhseal-gallery2.jpg" style="width: 100%" />
-          <div class="text">Seventh Seal</div>
-        </div>
-
-        <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-      </div>
-      <br />
-
-      <!-- The dots/circles -->
-      <div style="text-align: center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-      </div>
-    </section>
+    </footer>
     <script
       src="https://kit.fontawesome.com/e92af0f3f3.js"
       crossorigin="anonymous"
