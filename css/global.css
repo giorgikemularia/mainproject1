@@ -321,7 +321,7 @@ html body .bg-img .grid-item:nth-child(4) .tibisilogo {
 }
 html body .bg-img .grid-item:nth-child(5) {
   grid-row: 3;
-  width: 600px;
+  width: 775px;
   transform: translateX(-400px);
   display: flex;
   flex-direction: column;
@@ -333,11 +333,27 @@ html body .bg-img .grid-item:nth-child(5) {
 }
 html body .bg-img .grid-item:nth-child(5) h2 {
   font-size: 15px;
+  transform: translate(316px, -20px);
 }
-html body .bg-img .grid-item:nth-child(5) .what-u-find {
-  color: white;
+html body .bg-img .grid-item:nth-child(5) .cont {
+  display: flex;
+  justify-content: space-around;
+  gap: 50px;
 }
-html body .bg-img .grid-item:nth-child(5) .what-u-find p {
+html body .bg-img .grid-item:nth-child(5) .cont .what-u-find {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+html body .bg-img .grid-item:nth-child(5) .cont .what-u-find h6 {
+  color: #dd2242;
+  text-align: center;
+  font-size: 42.137px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+}
+html body .bg-img .grid-item:nth-child(5) .cont .what-u-find p {
   font-size: 12px;
   line-height: 28px;
   color: #e0e0e0;
