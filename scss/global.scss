@@ -814,9 +814,11 @@ html {
     transform: translateY(-183px);
     display: flex;
     flex-direction: column;
+    gap: 5px;
     align-items: center;
     h2 {
       @include h2about;
+      transform: translateY(-23px);
     }
     p {
       @include ptext;

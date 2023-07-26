@@ -339,9 +339,9 @@ html body .bg-img .grid-item:nth-child(5) .what-u-find {
 }
 html body .bg-img .grid-item:nth-child(5) .what-u-find p {
   font-size: 12px;
-  font-family: "BPG Algeti Compact", sans-serif;
   line-height: 28px;
   color: #e0e0e0;
+  font-family: "DejaVu Sans Condensed", sans-serif;
 }
 html body .bg-img .grid-item:nth-child(6) {
   grid-row: 3;
@@ -387,9 +387,9 @@ html .sect2 .grid2:nth-child(2) h4 {
 }
 html .sect2 .grid2:nth-child(2) p {
   font-size: 12px;
-  font-family: "BPG Algeti Compact", sans-serif;
   line-height: 28px;
   color: #e0e0e0;
+  font-family: "DejaVu Sans Condensed", sans-serif;
   width: 300px;
   height: 200px;
   transform: translate(0, -60px);
@@ -421,9 +421,9 @@ html .sect2 .grid2:nth-child(3) h4 {
 }
 html .sect2 .grid2:nth-child(3) p {
   font-size: 12px;
-  font-family: "BPG Algeti Compact", sans-serif;
   line-height: 28px;
   color: #e0e0e0;
+  font-family: "DejaVu Sans Condensed", sans-serif;
   width: 300px;
   height: 200px;
   transform: translate(300px);
@@ -467,9 +467,9 @@ html .sect3 .grid3:nth-child(2) h4 {
 }
 html .sect3 .grid3:nth-child(2) p {
   font-size: 12px;
-  font-family: "BPG Algeti Compact", sans-serif;
   line-height: 28px;
   color: #e0e0e0;
+  font-family: "DejaVu Sans Condensed", sans-serif;
 }
 html .sect3 .grid3:nth-child(2) a .space-button {
   border-radius: 4px;
@@ -504,9 +504,9 @@ html .sect3 .grid3:nth-child(3) h4 {
 }
 html .sect3 .grid3:nth-child(3) p {
   font-size: 12px;
-  font-family: "BPG Algeti Compact", sans-serif;
   line-height: 28px;
   color: #e0e0e0;
+  font-family: "DejaVu Sans Condensed", sans-serif;
 }
 html .sect3 .grid3:nth-child(4) {
   transform: translate(-10px);
@@ -543,9 +543,9 @@ html .sect4 .grid4:nth-child(2) h4 {
 }
 html .sect4 .grid4:nth-child(2) p {
   font-size: 12px;
-  font-family: "BPG Algeti Compact", sans-serif;
   line-height: 28px;
   color: #e0e0e0;
+  font-family: "DejaVu Sans Condensed", sans-serif;
   width: 350px;
   transform: translate(-80px);
 }
@@ -559,9 +559,9 @@ html .sect4 .grid4:nth-child(3) h4 {
 }
 html .sect4 .grid4:nth-child(3) p {
   font-size: 12px;
-  font-family: "BPG Algeti Compact", sans-serif;
   line-height: 28px;
   color: #e0e0e0;
+  font-family: "DejaVu Sans Condensed", sans-serif;
   transform: translate(340px);
   width: 350px;
 }
@@ -587,9 +587,9 @@ html .sect5 h2 {
 }
 html .sect5 p {
   font-size: 12px;
-  font-family: "BPG Algeti Compact", sans-serif;
   line-height: 28px;
   color: #e0e0e0;
+  font-family: "DejaVu Sans Condensed", sans-serif;
   font-size: 20px;
   width: 500px;
   position: absolute;
@@ -754,9 +754,9 @@ html #aboutus .bg-text h2 {
 }
 html #aboutus .bg-text p {
   font-size: 12px;
-  font-family: "BPG Algeti Compact", sans-serif;
   line-height: 28px;
   color: #e0e0e0;
+  font-family: "DejaVu Sans Condensed", sans-serif;
   font-size: 17px;
   position: absolute;
   bottom: 325px;
@@ -774,9 +774,9 @@ html #aboutus .p51,
 html #aboutus .p52,
 html #aboutus .p53 {
   font-size: 12px;
-  font-family: "BPG Algeti Compact", sans-serif;
   line-height: 28px;
   color: #e0e0e0;
+  font-family: "DejaVu Sans Condensed", sans-serif;
   width: 240px;
 }
 html #aboutus .h51 {
@@ -836,9 +836,9 @@ html #services .servisebi1 .shinaarsi1 h2 {
 }
 html #services .servisebi1 .shinaarsi1 p {
   font-size: 12px;
-  font-family: "BPG Algeti Compact", sans-serif;
   line-height: 28px;
   color: #e0e0e0;
+  font-family: "DejaVu Sans Condensed", sans-serif;
   transform: translateY(5px);
 }
 html #services .servisebi1 .shinaarsi2 h2 {
@@ -847,9 +847,9 @@ html #services .servisebi1 .shinaarsi2 h2 {
 }
 html #services .servisebi1 .shinaarsi2 p {
   font-size: 12px;
-  font-family: "BPG Algeti Compact", sans-serif;
   line-height: 28px;
   color: #e0e0e0;
+  font-family: "DejaVu Sans Condensed", sans-serif;
   transform: translateY(5px);
 }
 html #services .servisebi1 .shinaarsi22 {
@@ -886,9 +886,9 @@ html #services .servisebi2 .shinaarsi2 h2 {
 }
 html #services .servisebi2 .shinaarsi2 p {
   font-size: 12px;
-  font-family: "BPG Algeti Compact", sans-serif;
   line-height: 28px;
   color: #e0e0e0;
+  font-family: "DejaVu Sans Condensed", sans-serif;
   transform: translateY(5px);
 }
 html #services .servisebi2 .shinaarsi22 {
@@ -910,9 +910,9 @@ html #services .servisebi2 .shinaarsi22 .shinaarsi23 h2 {
 }
 html #services .servisebi2 .shinaarsi22 .shinaarsi23 p {
   font-size: 12px;
-  font-family: "BPG Algeti Compact", sans-serif;
   line-height: 28px;
   color: #e0e0e0;
+  font-family: "DejaVu Sans Condensed", sans-serif;
   transform: translateY(5px);
 }
 html #services .servisebi2 .shinaarsi22 .shinaarsi23 .services-button {
@@ -958,9 +958,9 @@ html #services .servisebi3 .shinaarsi3 h2 {
 }
 html #services .servisebi3 .shinaarsi3 p {
   font-size: 12px;
-  font-family: "BPG Algeti Compact", sans-serif;
   line-height: 28px;
   color: #e0e0e0;
+  font-family: "DejaVu Sans Condensed", sans-serif;
 }
 html #news {
   display: flex;
@@ -987,9 +987,9 @@ html #news .h2p h2 {
 }
 html #news .h2p p {
   font-size: 12px;
-  font-family: "BPG Algeti Compact", sans-serif;
   line-height: 28px;
   color: #e0e0e0;
+  font-family: "DejaVu Sans Condensed", sans-serif;
   font-size: 20px;
 }
 html #news .videooppen video {
@@ -1021,9 +1021,9 @@ html #news .director-about .director .content-dir h2 {
 }
 html #news .director-about .director .content-dir p {
   font-size: 12px;
-  font-family: "BPG Algeti Compact", sans-serif;
   line-height: 28px;
   color: #e0e0e0;
+  font-family: "DejaVu Sans Condensed", sans-serif;
 }
 html #news .director-about .about122 {
   display: flex;
@@ -1046,25 +1046,27 @@ html #news .director-about .about122 .content-about h2 {
 }
 html #news .director-about .about122 .content-about p {
   font-size: 12px;
-  font-family: "BPG Algeti Compact", sans-serif;
   line-height: 28px;
   color: #e0e0e0;
+  font-family: "DejaVu Sans Condensed", sans-serif;
 }
 html #contact {
   transform: translateY(-183px);
   display: flex;
   flex-direction: column;
+  gap: 5px;
   align-items: center;
 }
 html #contact h2 {
   font-size: 50px;
   color: rgb(24, 8, 8);
+  transform: translateY(-23px);
 }
 html #contact p {
   font-size: 12px;
-  font-family: "BPG Algeti Compact", sans-serif;
   line-height: 28px;
   color: #e0e0e0;
+  font-family: "DejaVu Sans Condensed", sans-serif;
 }
 html #contact a {
   color: rgb(24, 8, 8);
